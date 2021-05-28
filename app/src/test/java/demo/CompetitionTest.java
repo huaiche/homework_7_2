@@ -83,7 +83,7 @@ class CompetitionTest {
 		Competition a = new Competition(1,3,8,22,"A");
 		assertEquals("wrong time",a.rent());
 	}
-	/*
+	
 	@Test
 	void test13() {
 		Competition a = new Competition(1,3,8,9.3,"A");
@@ -101,10 +101,10 @@ class CompetitionTest {
 		Competition a = new Competition(1,3,8,9,"A");
 		assertEquals("project:one lane $3000",a.rent());
 	}
-	
+	/*
 	@Test
 	void test16() {
-		Competition a = new Competition(1,9,8,10,"G");
+		Competition a = new Competition(1,9,8,10,"A");
 		assertEquals("wrong time label",a.rent());
 	}
 	
