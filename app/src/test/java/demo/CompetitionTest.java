@@ -119,7 +119,7 @@ class CompetitionTest {
 		Competition a = new Competition(1,9,8,10,"B");
 		assertEquals("project:time rent $750",a.rent());
 	}
-	/*
+	
 	@Test
 	void test19() {
 		Competition a = new Competition(1,9,8,10,"C");
@@ -137,5 +137,5 @@ class CompetitionTest {
 		Competition a = new Competition(1,9,8,10,"E");
 		assertEquals("project:time rent $750",a.rent());
 	}
-	*/
+	
 }
