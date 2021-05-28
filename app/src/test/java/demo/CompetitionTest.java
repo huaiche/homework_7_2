@@ -104,7 +104,7 @@ class CompetitionTest {
 	
 	@Test
 	void test16() {
-		Competition a = new Competition(1,9,8,10,"A");
+		Competition a = new Competition(1,9,8,10,"G");
 		assertEquals("wrong time label",a.rent());
 	}
 	
