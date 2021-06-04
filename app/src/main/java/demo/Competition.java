@@ -44,7 +44,7 @@ public class Competition {
 			}	
 		}
 		else {
-			if(w_time != "A" && w_time != "B" && w_time != "C" && w_time != "D" && w_time != "E") {
+			if(w_time.notEquals("A") && w_time.notEquals("B") && w_time.notEquals("C") && w_time.notEquals("D") && w_time.notEquals("E")) {
 				return "wrong time label";
 			}
 			else {
