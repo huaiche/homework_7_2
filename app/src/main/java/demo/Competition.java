@@ -21,7 +21,7 @@ public class Competition {
 	}
 	
 	public String rent(){
-		
+		int money;
 		
 		if(coach<1) {
 			return "project:normal";
