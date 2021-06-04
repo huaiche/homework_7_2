@@ -44,13 +44,15 @@ public class Competition {
 			}	
 		}
 		else {
-			if(w_time.notEquals("A") && w_time.notEquals("B") && w_time.notEquals("C") && w_time.notEquals("D") && w_time.notEquals("E")) {
-				return "wrong time label";
-			}
-			else {
+			if(w_time.equals("A") || w_time.equals("B") || w_time.equals("C") || w_time.equals("D") || w_time.equals("E")) {
+				
 				money = coach * 120 + student * 70;
 				
 				return "project:time rent $" + Integer.toString(money);
+			}
+			else {
+				
+				return "wrong time label";
 			}
 		}
 		
