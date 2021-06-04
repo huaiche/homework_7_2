@@ -6,17 +6,17 @@ public class Competition {
 	
 	private int coach;
 	private int student;
-	private double s_time;
-	private double e_time;
-	private String w_time;
+	private double sTime;
+	private double eTime;
+	private String wTime;
 	private int all;
 	
-	public Competition(int coach,int student,double s_time,double e_time,String w_time) {
+	public Competition(int coach,int student,double sTime,double eTime,String wTime) {
 		this.coach = coach;
 		this.student = student;
-		this.s_time = s_time;
-		this.e_time = e_time;
-		this.w_time = w_time;
+		this.sTime = sTime;
+		this.eTime = eTime;
+		this.wTime = wTime;
 		all = coach + student;
 	}
 	
@@ -27,15 +27,15 @@ public class Competition {
 			return "project:normal";
 		}
 		else if(all < 10) {
-			if(s_time < 8 || (s_time >= 10 && s_time < 10.3) || (s_time >= 12.3 && s_time < 14) || (s_time >= 16 && s_time < 16.3) || (s_time >= 18.3 && s_time < 19) || s_time >= 21 || e_time < 8 || (e_time > 10 && e_time < 10.3) || (e_time > 12.3 && e_time < 14) || (e_time > 16 && e_time < 16.3) || (e_time > 18.3 && e_time < 19) || e_time > 21)
+			if(sTime < 8 || (sTime >= 10 && sTime < 10.3) || (sTime >= 12.3 && sTime < 14) || (sTime >= 16 && sTime < 16.3) || (sTime >= 18.3 && sTime < 19) || sTime >= 21 || eTime < 8 || (eTime > 10 && eTime < 10.3) || (eTime > 12.3 && eTime < 14) || (eTime > 16 && eTime < 16.3) || (eTime > 18.3 && eTime < 19) || eTime > 21)
 			{
 				return "wrong time";
 			}
-			else if(s_time + 1 != e_time && s_time + 2 != e_time) {
+			else if(sTime + 1 != eTime && sTime + 2 != eTime) {
 				return "plz rent 1 or 2 hours";
 			}
 			else {
-				if(e_time-s_time == 2) {
+				if(eTime-sTime == 2) {
 					return "project:one lane $6000";
 				}
 				else{
@@ -44,8 +44,8 @@ public class Competition {
 			}	
 		}
 		else {
-			if(w_time.equals("A") || w_time.equals("B") || w_time.equals("C") || w_time.equals("D") || w_time.equals("E")) {
-				
+			if(wTime.equals("A") || wTime.equals("B") || wTime.equals("C") || wTime.equals("D") || wTime.equals("E")) {
+					
 				money = coach * 120 + student * 70;
 				
 				return "project:time rent $" + Integer.toString(money);
